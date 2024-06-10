@@ -112,11 +112,10 @@ function showValues(obj) {
 */
 
 function makeCard(cardNumber, expirationDate, securityCode){
-  let newCard = {
-    number : cardNumber,
-    date : expirationDate,
-    code : securityCode
-  }
+  let newCard = {}
+  newCard.cardNumber = cardNumber
+  newCard.expirationDate = expirationDate
+  newCard.securityCode = securityCode
   return newCard
 }
 
