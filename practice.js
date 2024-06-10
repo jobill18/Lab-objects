@@ -111,7 +111,14 @@ function showValues(obj) {
   Return that object so that whenever you invoke makeCard, you get a brand new credit card.
 */
 
-//Code Here
+function makeCard(cardNumber, expirationDate, securityCode){
+  let newCard = {
+    number : cardNumber,
+    date : expirationDate,
+    code : securityCode
+  }
+  return newCard
+}
 
 /// ////////////// PROBLEM 9 ///////////////////
 
