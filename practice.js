@@ -121,7 +121,12 @@ function greaterThan10(obj){
   Return the updated object.
 */
 
-//Code Here
+function double(obj){
+  for (const o in obj){
+    obj[o] = obj[o]*2
+  }
+  return obj
+}
 
 /// ////////////// PROBLEM 7 ///////////////////
 
