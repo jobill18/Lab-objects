@@ -17,7 +17,7 @@
 let me = {}
 me.name = "Joseph",
 me.age = 29
-alert(me.name)
+// alert(me.name)
 
 /// ////////////// PROBLEM 2 ///////////////////
 
@@ -163,7 +163,10 @@ function makeCard(cardNumber, expirationDate, securityCode){
   Delete the property password and return the object.
 */
 
-//Code Here
+function removePassword(object){
+  delete object.password;
+  return object
+}
 
 /// ////////////// PROBLEM 10 ///////////////////
 
@@ -180,7 +183,12 @@ const deleteTheBigNumbers = {
   Write a for...in loop that deletes every property from the object deleteTheBigNumbers whose value is greater than 100.
 */
 
-//Code Here
+for (const n in deleteTheBigNumbers){
+  if (deleteTheBigNumbers[n] > 100){
+    delete deleteTheBigNumbers[n];
+  }
+}
+// console.log(deleteTheBigNumbers)
 
 /*
   Once you complete a problem, refresh ./destructuring.html in your browser and check to see if the problem's test(s) are passing.
@@ -205,7 +213,7 @@ const carDetails = {
   Use object destructuring to save the property values from the object carDetails into new variables.
 */
 
-//Code Here
+const {color, make, model, year} = carDetails
 
 /// ////////////// PROBLEM 12 ///////////////////
 
